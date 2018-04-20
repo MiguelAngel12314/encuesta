@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body ng-app="app">
+    <div id="contenedor">
+    	<ng-view></ng-view>
+    </div>
+    <!-- Jquery -->
+    <script src="librerias/jquery/jquery.min.js"></script>
+    <!-- AngulaJs -->
+  	<script src="librerias/angular/angular.min.js"></script>
+  	<script src="librerias/angular/angular-route.min.js"></script>
+
+  	<script src="app/app.js"></script>
+  	<script src="app/rutas.js"></script>
+
+  	<!--Encuesta-->
+  	<script src="app/modulos/encuesta/encuesta.module.js"></script>
+  	<script src="app/modulos/encuesta/encuesta.controller.js"></script>
+  	<script src="app/modulos/encuesta/encuesta.service.js"></script>
+  </body>
+</html>

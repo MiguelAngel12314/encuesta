@@ -1,0 +1,102 @@
+<div id="encabezado">
+    <p><center><img src="assets/img/encabezado.png" > </center></p>
+</div>
+<div id="menu" >
+    <center><img src="assets/img/itao.png" ></center>
+    <h1><br> Instrucciones: Contesta las preguntas conforme a las caritas que se muetran  <i>id</i></h1>
+        <p>El valor de las caritas es considerado: <br> Carita triste= Malo <br> Carita feliz= Excelente <br> Carita restante= Medio</p>         
+</div>      
+<div id="contenido">       
+	<center>
+    	<font color="#454545" size="6" face="Comic Sans MS, Arial, MS Sans Serif">Pregunta 1</font><br>
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta1 == 'malo'}" 
+			 ng-click ="vm.preguntas.pregunta1 = 'malo'" 
+			 src="assets/img/malo2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta1 == 'medio'}" 
+			 ng-click ="vm.preguntas.pregunta1 = 'medio'" 
+			 src="assets/img/medio2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta1 == 'bueno'}" 
+			 ng-click ="vm.preguntas.pregunta1 = 'bueno'" 
+			 src="assets/img/bueno2.png" 
+			 border="5"> <br>
+		
+		<font color="#454545" size="6" face="Comic Sans MS, Arial, MS Sans Serif">Pregunta 2</font><br>
+		<img style="cursor: pointer;"
+		  	 ng-class="{sizeImage: vm.preguntas.pregunta2 == 'malo'}"  
+			 ng-click ="vm.preguntas.pregunta2 = 'malo'" 
+			 src="assets/img/malo2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta2 == 'medio'}" 
+			 ng-click ="vm.preguntas.pregunta2 = 'medio'" 
+			 src="assets/img/medio2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta2 == 'bueno'}" 
+			 ng-click ="vm.preguntas.pregunta2 = 'bueno'" 
+			 src="assets/img/bueno2.png" 
+			 border="5"><br>
+
+		<font color="#454545" size="6" face="Comic Sans MS, Arial, MS Sans Serif">Pregunta 3</font><br>
+		<img style="cursor: pointer;" 
+		 	 ng-class="{sizeImage: vm.preguntas.pregunta3 == 'malo'}" 
+			 ng-click ="vm.preguntas.pregunta3 = 'malo'" 
+			 src="assets/img/malo2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta3 == 'medio'}" 
+			 ng-click ="vm.preguntas.pregunta3 = 'medio'" 
+			 src="assets/img/medio2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta3 == 'bueno'}" 
+			 ng-click ="vm.preguntas.pregunta3 = 'bueno'" 
+			 src="assets/img/bueno2.png" 
+			 border="5"><br>
+
+		<font color="#454545" size="6" face="Comic Sans MS, Arial, MS Sans Serif">Pregunta 4</font><br>
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta4 == 'malo'}" 
+			 ng-click ="vm.preguntas.pregunta4 = 'malo'" 
+			 src="assets/img/malo2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta4 == 'medio'}" 
+			 ng-click ="vm.preguntas.pregunta4 = 'medio'" 
+			 src="assets/img/medio2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta4 == 'bueno'}" 
+			 ng-click ="vm.preguntas.pregunta4 = 'bueno'" 
+			 src="assets/img/bueno2.png" 
+			 border="5"><br>
+
+		<font color="#454545" size="6" face="Comic Sans MS, Arial, MS Sans Serif">Pregunta 5</font><br>
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta5 == 'malo'}" 
+			 ng-click ="vm.preguntas.pregunta5 = 'malo'" 
+			 src="assets/img/malo2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta5 == 'medio'}" 
+			 ng-click ="vm.preguntas.pregunta5 = 'medio'" 
+			 src="assets/img/medio2.png" 
+			 border="5"> 
+		<img style="cursor: pointer;" 
+			 ng-class="{sizeImage: vm.preguntas.pregunta5 == 'bueno'}" 
+			 ng-click ="vm.preguntas.pregunta5 = 'bueno'" 
+			 src="assets/img/bueno2.png" 
+			 border="5"> <br>
+		<button class="enviar" type="button" ng-click="vm.enviar();">Enviar Respuesta</button>
+    </center>
+</div>
+<div class="overlay">
+	<div id="alert">
+		{{vm.mensaje}}
+	</div>
+</div>
